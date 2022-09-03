@@ -1,0 +1,11 @@
+{
+  "name": "Mern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "npm start watch --prefix server",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client && npm start --prefix server"
+  }}

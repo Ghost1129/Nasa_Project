@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn deploy
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ghost/.fig/bin:/Users/ghost/.local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/ghost/React/ZTM/Mern/package.json: Unexpected token } in JSON at position 322
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "Mern",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "client": "npm start --prefix client",
+      "server": "npm start watch --prefix server",
+      "watch": "npm run server & npm run client",
+      "deploy": "npm run build --prefix client && npm run server --prefix server",
+    }}
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
